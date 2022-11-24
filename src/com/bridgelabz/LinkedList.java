@@ -45,4 +45,13 @@ public class LinkedList {
         previousNode.next = newNode;
         newNode.next = tempNode;
     }
+
+    public void pop() {
+        if (this.head == null) {
+
+        }
+        Node temp = head;
+        head = temp.next;
+        temp = null;
+    }
 }
