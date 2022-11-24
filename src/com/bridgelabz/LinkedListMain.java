@@ -6,7 +6,7 @@ public class LinkedListMain {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the options:\n1. Add the data.\n2. Append the data\n3. Insert in between\n4. Delete the data at first position");
+        System.out.println("Enter the options:\n1. Add the data.\n2. Append the data\n3. Insert in between\n4. Delete the data at first position\n5. Delete the data at last position");
         switch (sc.nextInt()) {
 
             case 1:
@@ -20,6 +20,9 @@ public class LinkedListMain {
                 break;
             case 4:
                 Operations.pop();
+                break;
+            case 5:
+                Operations.popLast();
                 break;
         }
 
